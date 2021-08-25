@@ -289,6 +289,8 @@ int main()
 		cout << "Please select a function" << endl;
 		int select = -1;
 		cin >> select;
+		cin.clear();
+		cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
 		switch (select)
 		{
 		case 1:
@@ -326,6 +328,7 @@ int main()
 			system("cls");
 			break;
 		}
+
 	}
 
 	return 0;
